@@ -11,5 +11,23 @@ some cases (experimental).
 
 ## The code
 
-The code is, in total
+The code is, in total 91 python and 133 bash lines.
+
+Actually has support for <strong>bash</strong> and <strong>zsh</strong> only. In future
+versions more shells will be supported.
+
+## Installation
+
+* Download repository
+* execute install.sh (without arguments to see usage) and follow instructions
+
+## Unistallation
+
+* Delete install_folder
+
+or
+
+* Delete the line from .rc file from your shell.
+
+
 
