@@ -19,7 +19,7 @@ trap 'preexec_invoke_exec' DEBUG
 command_not_found_handle() {
     com=`python $SUIBASH_HOME/.src/suibash.py $@`;
     if [ "$com" == "SUIBASH" ]; then
-        echo "This wrapper if meant to guess the real command you want to write when there is a typo in it"
+        echo "This wrapper is meant to guess the real command you want to write when there is a typo in it"
     elif [ "$com" == "nothing_found_handle" ]; then
         eval $com;
     else
