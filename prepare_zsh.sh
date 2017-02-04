@@ -7,7 +7,7 @@ preexec () {
 }
 
 command_not_found_handler () {
-    com=`python $SUIBASH_HOME/.src/suibash.py $@`;
+    com=`python3 $SUIBASH_HOME/.src/suibash.py $@`;
     if [ "$com" = "SUIBASH" ]; then
         echo "This wrapper if meant to guess the real command you want to write when there is a typo in it"
     elif [ "$com" = "nothing_found_handle" ]; then

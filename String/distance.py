@@ -64,9 +64,9 @@ class Distance:
         distancies = list(map(lambda x: (x, Distance.distance(str1, x, sim_func, with_ham)), lst))
         distancies.sort(key=lambda x: (x[1], x[0]))
         mindist = min(distancies[0][1], max_dist)
-        mindist_list = map(lambda x: x[0], filter(lambda x: x[1] <= mindist, distancies))
+        mindist_list = list(map(lambda x: x[0], filter(lambda x: x[1] <= mindist, distancies)))
         try:
-            return get_most_used(list)
+            return get_most_used(mindist_list)
         except:
             return "nothing_found_handle"
             # return list

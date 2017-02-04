@@ -1,3 +1,6 @@
-__author__ = 'tfg'
+__author__ = 'ShakMR'
 
-import Core.commandline
+import sys
+from Core.commandline import Suibash
+
+Suibash.execute(sys.argv)
